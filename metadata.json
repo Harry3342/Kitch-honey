@@ -1,0 +1,6 @@
+{
+  "name": "Asali Wild - Kenyan Organic Honey & Subscriptions",
+  "description": "Artisanal raw Kenyan honey e-commerce platform with real-time apiary inventory tracking, M-Pesa STK Push payments, and recurring Hive Box subscriptions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
