@@ -167,10 +167,21 @@ Store managers can access the **Real-Time Apiary Inventory & Operations** panel:
 
 ## 📦 Deployment
 
-The application is fully optimized for single-page application (SPA) deployment on:
+### Deploying to Vercel
+The repository includes pre-configured `vercel.json` and `.npmrc` for instant zero-config deployments on [Vercel](https://vercel.com):
+1. Push your repository changes to GitHub.
+2. In the Vercel Dashboard, import `Harry3342/Kitch-honey`.
+3. Vercel automatically detects the Vite framework:
+   - **Framework Preset**: Vite
+   - **Build Command**: `npm run build`
+   - **Output Directory**: `dist`
+   - **Install Command**: `npm install` (peer dependency resolution handled cleanly via `.npmrc`)
+4. Click **Deploy**.
+
+### Other Hosting Platforms
+The application is also ready for:
 - **Cloud Run / Google Cloud**
-- **Vercel**
-- **Netlify**
+- **Netlify** (configured via `dist` output)
 - **GitHub Pages / AWS S3 + CloudFront**
 
 Ensure your web server routes all fallback requests to `index.html` for client-side routing.
